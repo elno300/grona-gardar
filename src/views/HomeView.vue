@@ -61,8 +61,8 @@ export default {
      ===========================TOP============================
      ==========================================================  -->
     <section class="home_top">
-      <SearchBar class="search_style"></SearchBar>
-      <div class="home_top_block">
+      <!-- <SearchBar class="search_style"></SearchBar> -->
+      <!-- <div class="home_top_block">
         <div class="home_top_space">
           <h2>
             Nyskördat efter säsong
@@ -81,7 +81,7 @@ export default {
             </div>
           </router-link>
         </div>
-      </div>
+      </div> -->
     </section>
 
 
@@ -288,21 +288,19 @@ article {
 }
 
 /*  ==========================================================
-     ===========================TOP============================
-     ==========================================================   */
+    ===========================TOP============================
+    ==========================================================   */
 
 .home_top {
-  /* background-image: url("../assets/media/pexels-karolina-grabowska-4750274.jpg"); */
-  /* background-image: url("../assets/media/pexels-gustavo-fring-4894638.jpg"); */
-  background-image: url("../assets/media/pexels-karolina-grabowska-4750271.jpg");
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    background-image: url("../assets/media/gardeningladies-vertical.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom; /* Change here */
+    height: 110vw;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .search_style {
@@ -360,11 +358,11 @@ article {
 
 
 /*  ==========================================================
-     ========================SEASON============================
-     ==========================================================   */
+    ========================SEASON============================
+    ==========================================================   */
 
 .section_season {
-  background-color: var(--dark-beige);
+  background-color: var(--mid-beige);
   padding:4rem 6%;
   display: flex;
   margin: auto;
@@ -375,7 +373,7 @@ article {
 }
 
 .specific_product {
-  background-color: var(--light-beige);
+  background-color: var(--dark-beige);
 }
 
 .product_list {
@@ -419,8 +417,8 @@ article {
 
 
 /*  ==========================================================
-     ========================ABOUT=============================
-     ==========================================================   */
+    ========================ABOUT=============================
+    ==========================================================   */
 
 .section_about {
   background-color: var(--dark-green);
@@ -452,8 +450,8 @@ article {
 }
 
 /*  ==========================================================
-     =======================CATEGORY==========================
-     ==========================================================   */
+    =======================CATEGORY===========================
+    ==========================================================   */
 
 
 .block_category {
@@ -527,8 +525,8 @@ article {
 
 
 /*  ==========================================================
-     =====================ENVIRONMENT=========================
-     ==========================================================   */
+    ======================ENVIRONMENT=========================
+    ==========================================================   */
 
 .section_environment {
   background-color: var(--dark-green);
@@ -567,8 +565,8 @@ article {
 
 
 /*  ==========================================================
-     ========================REVIEW==========================
-     ==========================================================   */
+    ==========================REVIEW==========================
+    ==========================================================   */
 
 .main_review {
   background: var(--light-beige);
@@ -735,6 +733,16 @@ article {
     flex-wrap: wrap;
   }
 }
+
+
+
+@media screen and (min-width: 769px) {
+  .home_top {
+    background-image: url("../assets/media/gardeningladies.jpg");
+  }
+}
+
+
 
 
 @media screen and (min-width: 970px) {
