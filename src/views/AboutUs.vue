@@ -12,6 +12,7 @@
 
 
 .block_about h1 {
+    margin-top: 25px;
     padding-bottom: 1rem;
     font-size: 24px;
     font-family: Anevir Next DemiBold;
@@ -23,64 +24,54 @@ b{
 
 .block_about p{
     padding: 10px 00;
+    text-align: justify;
 }
-
-/* .img-container{
-    height: 90vh;
-} */
 
 
 .about_img {
     width: 100%;
     height: 100%;
     height: fit-content;
+    object-fit: cover;
 }
 
 .about_text {
     padding: 3rem 10%;
+    max-width: 700px;
+    margin-bottom: 25px;
 }
 
-/* @media screen and (min-width:650px){
+.img-container{
+    width: 100vw;
+    max-height: 93vh;
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center; */
+}
 
+@media screen and (min-width:650px){
+    /* .img-container{
+    height: 93vh;
+    width: 100vw;
+    overflow: hidden;
 } */
 
-/* @media screen and (min-width:650px) { */
-/*
-    article {
-        height: 80%;
-    }
+.img-container{
+    width: 100vw;
+    max-height: 73vh;
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center; */
+}
 
-    .block_about {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
+.block_about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+}
 
-    .block_about h1 {
-        font-size: 1.5rem;
-    } */
-
-
-    /* .about_img {
-        object-fit: cover;
-        width: 50vw;
-        height: auto;
-    }
-
-    .about_img_div:first-child {
-        order: 1;
-    }
-
-    .about_img_div {
-        display: flex;
-        justify-content: flex-end;
-        padding: 0;
-        margin: 0;
-    } */
-
-
-/* } */
 </style>
 
 <template>
