@@ -50,18 +50,18 @@ b{
 }
 
 @media screen and (min-width:650px){
-    /* .img-container{
-    height: 93vh;
-    width: 100vw;
-    overflow: hidden;
-} */
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+}
 
 .img-container{
     width: 100vw;
     max-height: 73vh;
     overflow: hidden;
-    /* display: flex;
-    justify-content: center; */
 }
 
 .block_about{
