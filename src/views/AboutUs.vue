@@ -3,9 +3,6 @@
 <style scoped>
 article{
     max-width: 128rem;
-    /* max-width: 100px; */
-    background-color: blue;
-    /* max-width: 1440px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +10,6 @@ article{
 
 .section_about {
     background-color: var(--mid-beige);
-
 }
 
 .block_about {

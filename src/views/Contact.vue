@@ -1,35 +1,31 @@
 <script></script>
 
 <style scoped>
-article {
+/* article {
     background-color: var(--mid-beige);
     height: 80%;
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
     justify-content: center;
+} */
 
-}
-
-
-.section_about {
+/* .section_about {
     background-color: var(--dark-green);
     display: flex;
     flex-direction: column;
     padding: 0;
     width: 100%;
-}
+} */
 
-.block_about {
-    /* padding: 1rem; */
+/* .block_about {
     color: var(--light-beige);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-}
+} */
 
-.block_about h1 {
+/* .block_about h1 {
     padding-bottom: 1rem;
 }
 
@@ -46,9 +42,9 @@ dt {
     font-weight: bold;
     padding-top: 1.5rem;
     padding-bottom: 0.5rem;
-}
+} */
 
-@media screen and (min-width:650px) {
+/* @media screen and (min-width:650px) {
 
     article {
         height: 80%;
@@ -88,7 +84,7 @@ dt {
         padding: 3rem 10%;
         margin: 0;
     }
-}
+} */
 </style>
 
 <template>

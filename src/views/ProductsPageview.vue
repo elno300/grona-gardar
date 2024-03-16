@@ -145,8 +145,8 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   padding: 1.2rem;
+  padding-top: 0;
 }
 
 .filter_categories {
@@ -154,6 +154,7 @@ export default {
   flex-direction: row;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
