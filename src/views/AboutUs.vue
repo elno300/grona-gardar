@@ -1,9 +1,19 @@
 <script></script>
 
 <style scoped>
+article{
+    max-width: 128rem;
+    /* max-width: 100px; */
+    background-color: blue;
+    /* max-width: 1440px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .section_about {
     background-color: var(--mid-beige);
+
 }
 
 .block_about {
@@ -44,24 +54,31 @@ b{
 .img-container{
     width: 100vw;
     max-height: 93vh;
+    max-height: 500px;
     overflow: hidden;
-    /* display: flex;
-    justify-content: center; */
 }
 
 @media screen and (min-width:650px){
 
-.img-container img{
+.img-container {
+    height: 110vw;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    max-width: 128rem;
+}
+
+.img-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center bottom;
-}
-
-.img-container{
-    width: 100vw;
-    max-height: 73vh;
-    overflow: hidden;
+    object-position: center top;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .block_about{
@@ -69,6 +86,18 @@ b{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+@media screen and (min-width:1400px){
+    .img-container {
+        max-height: 35vw;
+}
+}
+
+@media screen and (min-width:2049px){
+    .img-container{
+        max-height: 700px;
+    }
 }
 }
 
