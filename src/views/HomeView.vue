@@ -104,7 +104,7 @@ export default {
      ==========================================================  -->
     <section class="section_season">
       <div style="margin: auto;">
-        <h3>I säsong</h3>
+        <h2>I säsong</h2>
         <div>
           <ul class="product_list">
             <li v-for="product in productData">
@@ -343,6 +343,7 @@ article {
  color: white;
  font-size: 16.3vw;
  padding: 0;
+ user-select: none;
 }
 
 
@@ -428,8 +429,10 @@ article {
   margin: auto;
 }
 
-.section_season h3 {
-  padding-bottom: 1rem;
+.section_season h2 {
+  padding-bottom: 2rem;
+  font-size: 5vw;
+  font-family: "Anevir Next Cyr Medium";
 }
 
 .specific_product {
