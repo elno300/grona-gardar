@@ -61,6 +61,19 @@ export default {
      ===========================TOP============================
      ==========================================================  -->
     <section class="home_top">
+      <div class="slogan-container">
+        <div class="slogan-wrapper">
+          <p>VALUES MATTER</p>
+        </div>
+        <div class="slogan-btn-wrapper">
+          <div class="slogan-btn">
+            <router-link to="/about">
+              <p><b>LEARN MORE</b></p>
+            </router-link>
+          </div>
+        </div>
+      </div>
+
       <!-- <SearchBar class="search_style"></SearchBar> -->
       <!-- <div class="home_top_block">
         <div class="home_top_space">
@@ -292,15 +305,62 @@ article {
     ==========================================================   */
 
 .home_top {
-    background-image: url("../assets/media/gardeningladies-vertical.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom; /* Change here */
-    height: 110vw;
-    max-height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-image: url("../assets/media/gardeningladies-vertical.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom; /* Change here */
+  height: 115vw;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.slogan-container{
+  width: 80vw;
+  height: 200px;
+  position: absolute;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10%;
+  padding-top: 0;
+}
+
+.slogan-wrapper{
+  margin-top: 0;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slogan-wrapper p{
+ font-family: "Yes Margo";
+ color: white;
+ font-size: 16.3vw;
+ padding: 0;
+}
+
+
+.slogan-btn-wrapper{
+  background-color: white;
+  border-radius: 6px;
+  padding: 2vw 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slogan-btn p{
+  color: #7E8E36;
+  font-family: "Anevir Next DemiBold";
 }
 
 .search_style {
@@ -409,11 +469,6 @@ article {
 .button_color {
   background-color: var(--light-beige);
 }
-
-/* .product-card .add-to-cart-button button{
-  border: 5px solid var(--dark-green);
-  font-size: 1rem;
-} */
 
 
 /*  ==========================================================
@@ -641,6 +696,30 @@ article {
   }
 }
 
+@media screen and (min-width: 545px) {
+  .slogan-btn-wrapper{
+    font-size: 22px;
+    padding: 10.5px 27px;
+  }
+}
+
+
+
+@media screen and (min-width: 1px) and (max-width: 551px) {
+  .product_list {
+    row-gap: 1rem;
+    justify-content: center !important;
+  }
+
+  .product_list li {
+    width: calc(50% - 1rem);
+  }
+
+  .section_season .button_more_products {
+    margin-right: 0.4rem;
+  }
+}
+
 
 @media screen and (min-width: 560px) {
   .category_flex {
@@ -735,15 +814,21 @@ article {
 }
 
 
-
-@media screen and (min-width: 769px) {
-  .home_top {
-    background-image: url("../assets/media/gardeningladies.jpg");
+@media screen and (min-width: 686px) {
+  .slogan-wrapper p{
+    font-size: 112px;
   }
 }
 
 
 
+
+@media screen and (min-width: 767px) {
+  .home_top {
+    background-image: url("../assets/media/gardeningladies.jpg");
+
+  }
+}
 
 @media screen and (min-width: 970px) {
   .show_hide_two {
@@ -754,7 +839,6 @@ article {
   }
 }
 
-
 @media screen and (min-width: 1074px) {
   .show_hide_three {
     display: flex;
@@ -763,7 +847,6 @@ article {
     max-width: 220px;
   }
 }
-
 
 @media screen and (min-width:1172px) {
   .category_flex{
@@ -777,31 +860,9 @@ article {
   }
 }
 
-
 @media screen and (max-width: 1224px) {
   .product_list li {
     width: calc(33.33% - 1rem);
   }
 }
-
-@media screen and (min-width: 1px) and (max-width: 551px) {
-  .product_list {
-    row-gap: 1rem;
-    justify-content: center !important;
-  }
-
-  .product_list li {
-    width: calc(50% - 1rem);
-  }
-
-  .section_season .button_more_products {
-    margin-right: 0.4rem;
-  }
-}
-
-/* @media screen and (min-width: 1100px) {
-  .product_list li {
-    width: calc(25% - 1rem);
-  }
-} */
 </style>
