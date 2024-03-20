@@ -236,7 +236,7 @@ export default {
 <style scoped>
 
 .login-container {
-    height: 350px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
